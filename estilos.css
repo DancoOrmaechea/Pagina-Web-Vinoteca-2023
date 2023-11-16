@@ -570,6 +570,270 @@ h3{
 }
 /*--------------------------*/
 
+/* Media Queries */
+
+/* Pagina Conocenos */
+
+@media (max-width: 480px) {
+                    /*Barra de Navegacion*/
+.header__Navegacion {
+    display: flex;
+    height: 120px;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7a001f;
+    padding: 10px 10px; /* Espaciado interno para la barra de navegación */
+    color: #FFF8E7;
+}
+.navegacion__Paginas__ul{
+    display: none;
+}
+/* Estilo para el logotipo */
+.Logo__Vino__Teca:hover {
+    background-color: #58001675;
+    width: 120px;
+    border-radius: 20px;
+}
+.imagen__Logo__Principal{
+    max-block-size: 80px;
+    border-radius: 35px;
+}
+.h1Conocenos{
+    font-size: 2rem;
+    width: 406px;
+}
+.h1Contacto{
+    width: 406px;
+    font-size: 3rem;
+}
+.a__Conocenos{
+    font-size: 2rem;
+}
+.h1Conocenos{
+    background-color: #7a001f;
+    color: #FFF8E7;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.mainConocenos{
+    background-color: #212121;
+    height: 1850px;
+    width: 350px;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.h2Conocenos{
+    color:#FFF8E7 ;
+    font-size: 3rem;
+    margin-left: 0rem;
+}
+.parrafoConocenos{
+    color:#FFF8E7 ;   
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align:center;
+}
+.sectionConocenos{
+    background-color: #333333;
+    height: 18rem;
+    width: 406px;
+}
+.h2Conocenos{
+    margin-left: 4rem;
+    text-decoration: underline;
+    color: #7a001f;
+}
+.h3Conocenos{
+    margin-left: 4rem;
+    color:#FFF8E7 ;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.divContactoPadre{
+    margin: 0rem ;
+    display: grid;
+    grid-template-areas: 
+    "logo2 email"
+    "logo1 tel";
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 140px 140px;
+    background-color: #21212100;
+    border-radius: 50px;
+    text-align: center;
+}
+.imgContacto1{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo1;
+    margin-left: 1rem;
+}
+.imgContacto2{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo2;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+.h2ContactoHijo1{
+    font-size: 1rem;
+}
+.h2ContactoHijo2{
+    font-size: 1rem;
+}
+footer{
+    color: #FFF8E7;
+    background-color: #212121;
+    height: 160px;
+    width: 406px;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: grid;
+    grid-area: footer;
+    grid-template-areas:
+    "logo1 logo2 logo3"
+    "parrafo parrafo parrafo";
+    grid-template-rows: 90px 90px;
+    grid-template-columns: 50px 50px 50px;
+}
+.logosFooter1{
+    grid-area: logo1;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.logosFooter2{
+    grid-area: logo2;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.logosFooter3{
+    grid-area: logo3;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.footerParrafo{
+    grid-area: parrafo;
+    padding-top: 0rem;
+    padding-left: 2rem;
+}
+
+/* PAGINA CONTACTO */
+.h1Contacto{
+    background-color: #212121;
+    color: #FFF8E7;
+    text-align: center;
+    width: auto;
+    font-size: 2rem;
+}
+.divContactoPadre{
+    margin: 0rem ;
+    display: grid;
+    grid-template-areas: 
+    "logo2 email"
+    "logo1 tel";
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 140px 140px;
+    background-color: #21212100;
+    border-radius: 50px;
+    text-align: center;
+}
+.imgContacto1{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo1;
+    margin-left: 1rem;
+}
+.imgContacto2{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo2;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+.h2ContactoHijo1{
+    grid-area: email;
+    margin-top: 5.5rem;
+}
+.h2ContactoHijo2{
+    grid-area: tel;
+    margin-top: 1rem;
+}
+.containerContacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.mainContacto{
+    background-color:#8080002d;
+    border-radius: 50px;
+}
+.formContacto {
+    display: flex;
+    flex-direction: column;
+}
+.contactoTituloForm{
+    color: #FFF8E7;
+}
+.labelContacto {
+    margin-bottom: 8px;
+    color: #FFF8E7;
+}
+.subtitulosFormulario{
+    color: #FFF8E7 ;
+}
+input, textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#mensaje{
+    resize: none;
+}
+input[type="submit"] {
+    background-color: #333;
+    color: #FFF8E7;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+    color: #FFF8E7;
+}
+}
+
                 /* FUENTE DE LETRA*/
 @font-face {
     font-family: 'Merriweather', serif;
