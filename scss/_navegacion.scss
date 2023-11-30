@@ -1,0 +1,78 @@
+.header__Navegacion {
+	display: flex;
+	height: 170px;
+	width: auto;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $background-color_2;
+	padding: 10px 20px;
+	color: $color_1;
+}
+.Logo__Vino__Teca {
+	&:hover {
+		background-color: $background-color_3;
+		width: 120px;
+		border-radius: 20px;
+	}
+}
+#imagen__Logo__Principal {
+	max-block-size: 120px;
+	border-radius: 35px;
+}
+.navegacion__Paginas__ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 60px;
+}
+.navegacion__Paginas__li {
+	display: inline;
+	margin-right: 35px;
+}
+.navegacion__Paginas__a {
+	text-decoration: none;
+	color: $color_1;
+	font-size: 20px;
+	&:hover {
+		text-decoration: underline;
+		color: $color_1;
+		background-color: $background-color_4;
+		border-color: $border-color_1;
+		border-radius: 5px;
+	}
+}
+.li__Paginas__Hover {
+	display: none;
+}
+
+.vino__Menu__Div {
+	display: grid;
+	height: calc(100vh - 170px);
+	width: 100%;
+	object-fit: contain;
+	background-image: url(../imgs/Wine_Black_background_Bottle_Stemware_.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+.vino__Menu__Titulo__1 {
+	margin-left: 2rem;
+	color: $color_1;
+	font-size: 500%;
+}
+.vino__Menu__Titulo__2 {
+	margin-left: 4rem;
+	color: $color_1;
+	font-size: 500%;
+}
+.vino__Menu__Titulo__3 {
+	margin-left: 8rem;
+	color: $color_1;
+	font-size: 500%;
+}
+.vino__Menu__Titulo__4 {
+	margin-left: 14rem;
+	color: $color_1;
+	font-size: 500%;
+}
+

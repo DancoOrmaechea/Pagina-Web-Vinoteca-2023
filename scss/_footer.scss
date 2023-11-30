@@ -1,0 +1,52 @@
+footer {
+	color: $color_1;
+	background-color: $background-color_5;
+	height: 160px;
+	margin-top: 15rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	display: grid;
+	grid-area: footer;
+	grid-template-areas: "logo1 logo2 logo3" "parrafo parrafo parrafo";
+	grid-template-rows: 80px 80px;
+	grid-template-columns: 18rem 18rem 18rem;
+}
+.logosFooter1 {
+	grid-area: logo1;
+	justify-content: center;
+	height: 4rem;
+	width: 4rem;
+	margin-left: 0;
+	border-color: $border-color_1;
+	border-radius: 20px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.logosFooter2 {
+	grid-area: logo2;
+	justify-content: center;
+	height: 4rem;
+	width: 4rem;
+	margin-left: 0;
+	border-color: $border-color_1;
+	border-radius: 20px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.logosFooter3 {
+	grid-area: logo3;
+	justify-content: center;
+	height: 4rem;
+	width: 4rem;
+	margin-left: 0;
+	border-color: $border-color_1;
+	border-radius: 20px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.footerParrafo {
+	grid-area: parrafo;
+	padding-top: 2rem;
+	padding-left: 15rem;
+}

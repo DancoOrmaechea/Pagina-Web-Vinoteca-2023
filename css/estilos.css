@@ -42,11 +42,10 @@ a{
     width: 120px;
     border-radius: 20px;
 }
-.imagen__Logo__Principal{
+#imagen__Logo__Principal{
     max-block-size: 120px;
     border-radius: 35px;
 }
-
 /* Estilo para la lista de navegación */
 .navegacion__Paginas__ul {
     list-style: none;
@@ -63,7 +62,6 @@ a{
     font-size: 20px;
 }
 /* Estilo de enlaces al pasar el mouse por encima */
-
 .navegacion__Paginas__a:hover {
     text-decoration:underline;
     color: #FFF8E7;
@@ -71,7 +69,6 @@ a{
     border-color: #212121;
     border-radius: 5px;
 }
-/*Hover Oculto para menu hamburguesa*/
 .li__Paginas__Hover{ 
     display: none;
 }
@@ -103,7 +100,7 @@ a{
     height:calc(100vh - 170px);
     width:100%;
     object-fit:contain;
-    background-image: url(./imgs/Wine_Black_background_Bottle_Stemware_.jpg);
+    background-image: url(../imgs/Wine_Black_background_Bottle_Stemware_.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
