@@ -16,13 +16,20 @@ h2{
 p{   
     font-family: 'Merriweather', serif;
     src: url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap);
+    font-size: 1.2rem;
 
 }
+a{
+    font-family: 'Merriweather', serif;
+    src: url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap);
+}
+
 /* -------------------------------------------------------------------------------------------- */
                 /*Barra de Navegacion*/
 .header__Navegacion {
     display: flex;
     height: 170px;
+    width: auto;
     align-items: center;
     justify-content: space-between;
     background-color: #7a001f;
@@ -39,6 +46,7 @@ p{
     max-block-size: 120px;
     border-radius: 35px;
 }
+
 /* Estilo para la lista de navegación */
 .navegacion__Paginas__ul {
     list-style: none;
@@ -55,12 +63,17 @@ p{
     font-size: 20px;
 }
 /* Estilo de enlaces al pasar el mouse por encima */
+
 .navegacion__Paginas__a:hover {
     text-decoration:underline;
     color: #FFF8E7;
     background-color: rgba(59, 1, 16, 0.418);
     border-color: #212121;
     border-radius: 5px;
+}
+/*Hover Oculto para menu hamburguesa*/
+.li__Paginas__Hover{ 
+    display: none;
 }
 /*--------------------------*/
 
@@ -86,14 +99,15 @@ p{
 
 /* Imagen de vino MenuPrincipal */
 .vino__Menu__Div{
-    display: inline-block;
+    display: grid;
     height:calc(100vh - 170px);
-    width: 118.91rem;
+    width:100%;
+    object-fit:contain;
     background-image: url(./imgs/Wine_Black_background_Bottle_Stemware_.jpg);
     background-size:cover;
-    background-position:center 100% bottom 100%;
     background-repeat:no-repeat;
     background-attachment: fixed;
+    position:relative;
 }
 .vino__Menu__Titulo__1{ /*Titulo MENU PRINCIPAL*/
     margin-left:2rem;
@@ -133,14 +147,16 @@ p{
     margin:0;
     cursor: pointer;
 }
+.section_Vinos_Row:hover{
+    background: linear-gradient(to bottom,#7a001f 2%,#21212100 13%);
+}
 
 /* 1ER CARRUSEL */
 
 .vinoImgCarrusel{
-    object-fit: contain;
+    object-fit:contain;
     height: 23rem;
     width: 17rem;
-    object-fit: contain;
     margin:90px 0px 20px 10px;
     cursor: pointer;
     border: 2px solid #7a001f;
@@ -223,6 +239,10 @@ p{
 /* CARRUSEL AUTOMATICO */
 .imgCarruselFormulario{
     object-fit: cover;
+    height: 550px;
+    width: 600px;
+    border-radius: 10px;
+
 }
 .carruselAutomatico{ /*Grid hijo*/
     object-fit: contain;
@@ -342,10 +362,8 @@ footer{
     margin: 10px;
     padding: 20px;
     max-width: 400px;
-    /* height: auto; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .producto img {
     max-width: 10rem;
     object-fit: contain;
@@ -373,15 +391,21 @@ footer{
 .producto button:hover {
     background-color: #555;
 }
-
 .navegacionTienda{
     grid-area: nav;
     border: #212121 5px solid;
-    height: 50rem;
+    height: 40rem;
     margin: 2rem 2rem 2rem 4rem;
 }
 .listaVinosTienda{
-    margin: 3rem;
+    margin: 2rem;
+}
+.section__Vinos__Div{
+    margin: 10px;
+    cursor: pointer;
+}
+.section__Vinos__Div:hover{
+    text-decoration: underline;
 }
 .navegacionTiendaPlaceHolder{
     margin: 5px;
@@ -539,7 +563,7 @@ h3{
 .containerAcceder {
     max-width: 600px;
     margin: 50px auto;
-    margin-left: 10rem;
+    margin-left: auto;
     padding: 20px;
     background-color: #333333;
     border-radius: 20px;
@@ -557,51 +581,702 @@ h3{
     color: #FFF8E7;
 }
 .botonAcceder{
-    width: 250px;
+    width: auto;
 }
 .usuarioAcceder{
-    width: 400px;
+    width: auto;
 }
 .passwordAcceder{
-    width: 400px;
+    width: auto;
 }
 .emailAcceder{
-    width: 400px;
+    width: auto;
 }
 /*--------------------------*/
 
 /* Media Queries */
 
-/* Pagina Conocenos */
+                /* MEDIA QUERIES 1440 */
+@media(min-width:770px) and (max-width:1440px){
+.section_Vinos { /*Grid padre*/ /*PRIMERA FILA VINOS */
+    display: grid;
+    grid-template-columns: 17rem 17rem 17rem;
+    grid-template-rows: 19rem 19rem;
+    justify-content: center;
+    text-align: center;
+}
+.section_Vinos_Row { /*Grid hijos*/
+    border: 5px solid #212121;
+    height: 17rem;
+    width: 14rem;
+    object-fit: contain;
+    margin:0;
+    cursor: pointer;
+}
+#vinoLUCA{
+    margin-left: 18rem;
+}
+.formularioPaginaPrincipal{ /*FORMULARIO*/
+    margin: 0;
+    width: 80vh;
+}
+.vinoImgCarrusel{
+    height:350px;
+    width: 250px;
+}
+/* Section formulario y carrusel automatico */
 
+.sectionPaginaPrincipal{ /*Grid padre*/
+    display: grid;
+    grid-template-areas: 
+    "formulario formulario"
+    "carrusel carrusel";
+    grid-template-rows: 400px 400px ;
+    grid-template-columns: 400px 400px;
+}
+
+/* FORMULARIO */
+.formularioPaginaPrincipal{ /*Grid hijo*/
+    border-width: 20px;
+    border: 5px solid #212121;
+    grid-area: formulario;
+    margin:1rem 1rem 0rem 5rem;
+    height: 400px;
+    width: 60vw;
+    z-index: 1;
+    justify-content: center;
+}
+#exampleInputEmail1{
+    width: 400px;
+    background-color: #21212136;
+    color: #7a001f;
+}
+.formularioParrafo{
+    background-color: #212121;
+    color: #FFF8E7;
+}
+/* CARRUSEL AUTOMATICO */
+.imgCarruselFormulario{
+    object-fit:cover;
+    height: 500px;
+    width: auto;
+    border-radius: 60px;
+    margin: 70px;
+    z-index: 0;
+
+}
+
+.carruselAutomatico{ /*Grid hijo*/
+    object-fit: contain;
+    grid-area: carrusel;
+}
+.carousel-item{
+    object-fit: contain;
+}
+/* ------------------------------------------------- */
+
+/* PAGINA TIENDA */
+.contenedorTienda{
+    display: grid;
+    grid-template-areas:
+    "nav vino1 "
+    "nav vino2 "
+    "nav vino3 "
+    "vino1 vino2 "
+    "vino3 vino1 "
+    "vino2 vino3 ";
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 80rem 80rem 80rem 80rem 80rem 80rem;
+    gap: 30px;
+}
+.divTienda1{
+    display: grid;
+    grid-area: vino1;
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+}
+.divTienda2{
+    display: grid;
+    grid-area: vino2;
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+}
+.divTienda3{
+    display: grid;
+    grid-area: vino3;
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 160px;
+}
+.producto {
+    background-color: #21212136;
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.producto img {
+    max-width: 10rem;
+    object-fit: contain;
+    height: auto;
+}
+.producto h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    height: 5px;
+}
+.producto p {
+    font-size: 1rem;
+    height: 20px;
+}
+.producto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 40px;
+    margin: 5px;
+}
+.producto button:hover {
+    background-color: #555;
+}
+.navegacionTienda{
+    grid-area: nav;
+    border: #212121 5px solid;
+    height: 40rem;
+    margin: 2rem 2rem 2rem 4rem;
+}
+/* FOOTER */
+footer{
+    color: #FFF8E7;
+    background-color: #212121;
+    height: 160px;
+    width: 100vw;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: grid;
+    grid-area: footer;
+    grid-template-areas:
+    "logo1 logo2 logo3"
+    "parrafo parrafo parrafo";
+    grid-template-rows: 90px 90px;
+    grid-template-columns: 150px 150px 150px;
+}
+.logosFooter1{
+    grid-area: logo1;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.logosFooter2{
+    grid-area: logo2;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.logosFooter3{
+    grid-area: logo3;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.footerParrafo{
+    grid-area: parrafo;
+    margin-top: -1rem;
+    padding-top: 0rem;
+    padding-left: 2rem;
+}
+/* PAGINA CONTACTO */
+.divContactoPadre{
+    margin: 0rem ;
+    display: grid;
+    grid-template-areas: 
+    "logo2 email"
+    "logo1 tel";
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 140px 140px;
+    background-color: #21212100;
+    border-radius: 50px;
+    text-align: center;
+}
+.imgContacto1{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo1;
+    margin-left: 1rem;
+}
+.imgContacto2{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo2;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+.h2ContactoHijo1{
+    grid-area: email;
+    margin-top: 5.5rem;
+}
+.h2ContactoHijo2{
+    grid-area: tel;
+    margin-top: 1rem;
+}
+/* PAGINA CONOCENOS  */
+.mainConocenos{
+    background-color: #212121;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.h2Conocenos{
+    color: #7a001f;
+    text-decoration: underline;
+    font-size: 3rem;
+    width: auto;
+}
+.parrafoConocenos{
+    color:#FFF8E7 ;   
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align:center;
+}
+}
+                    /* MEDIA QUERIES 770 TABLET */
+@media(max-width: 770px){
+
+/* PRINCIPAL INDEX */
+
+.section_Vinos { /*Grid padre*/ /*PRIMERA FILA VINOS */
+    display: grid;
+    grid-template-columns: 17rem 17rem;
+    grid-template-rows: 19rem 19rem 19rem;
+    justify-content: center;
+}
+.section_Vinos_Row { /*Grid hijos*/
+    border: 5px solid #212121;
+    height: 17rem;
+    width: 15rem;
+    object-fit: contain;
+    margin:0;
+    cursor: pointer;
+}
+.section_Vinos_Row { /*Grid hijos*/
+    border: 5px solid #212121;
+    height: 15rem;
+    width: 12rem;
+    object-fit: contain;
+    margin-left:30px;
+    cursor: pointer;
+}
+#vinoLUCA{
+    margin-left: 140px;
+}
+.parrafoVinosRow{
+    margin-left: 30px;
+}
+.divVinosRow{
+    margin-right: 32px;
+}
+.section_Vinos_Row:hover{
+    background: linear-gradient(to bottom,#7a001f 2%,#21212100 10%);
+}
+.carruselAutomatico{
+    display: none;
+}
+.titulo__vino__h2{
+    font-size: 1.5rem;
+}
+.formularioPaginaPrincipal{ /*FORMULARIO*/
+    margin: 0;
+    width: 100vw;
+}
+.vinoImgCarrusel{
+    height:150px;
+    width: 140px;
+}
+/* FOOTER */
+footer{
+    color: #FFF8E7;
+    background-color: #212121;
+    height: 160px;
+    width: 100vw;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: grid;
+    grid-area: footer;
+    grid-template-areas:
+    "logo1 logo2 logo3"
+    "parrafo parrafo parrafo";
+    grid-template-rows: 90px 90px;
+    grid-template-columns: 150px 150px 150px;
+}
+.logosFooter1{
+    grid-area: logo1;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.logosFooter2{
+    grid-area: logo2;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.logosFooter3{
+    grid-area: logo3;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    margin-left:0;
+    border-color: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.footerParrafo{
+    grid-area: parrafo;
+    margin-top: -1rem;
+    padding-top: 0rem;
+    padding-left: 2rem;
+}
+
+/* ----------------------------------------------- */
+/* PAGINA CONTACTO */
+
+.contenedorTienda{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "vino1"
+    "vino2"
+    "vino3"
+;
+    grid-template-columns: 400px;
+    grid-template-rows: 600px;
+    gap: 30px;
+    justify-content: center;
+}
+.divTienda1{
+    display: grid;
+    grid-area: vino1;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+}
+.divTienda2{
+    display: grid;
+    grid-area: vino2;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+}
+.divTienda3{
+    display: grid;
+    grid-area: vino3;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+}
+.producto {
+    background-color: #21212136;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.producto img {
+    max-width: 10rem;
+    object-fit: contain;
+    height: auto;
+}
+.producto h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    height: 5px;
+}
+.producto p {
+    font-size: 1rem;
+    height: 20px;
+}
+.producto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 40px;
+    margin: 5px;
+}
+.producto button:hover {
+    background-color: #555;
+}
+.navegacionTienda{
+    grid-area: nav;
+    border: #212121 5px solid;
+    height: 40rem;
+    margin: 10px;
+}
+.listaVinosTienda{
+    margin: 2rem;
+}
+.section__Vinos__Div{
+    margin: 10px;
+    cursor: pointer;
+}
+.section__Vinos__Div:hover{
+    text-decoration: underline;
+}
+.navegacionTiendaPlaceHolder{
+    margin: 5px;
+    padding: 4px;
+}
+
+/* PAGINA CONTACTO */
+.divContactoPadre{
+    margin: 0rem ;
+    display: grid;
+    grid-template-areas: 
+    "logo2 email"
+    "logo1 tel";
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 140px 140px;
+    background-color: #21212100;
+    border-radius: 50px;
+    text-align: center;
+}
+.imgContacto1{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo1;
+    margin-left: 1rem;
+}
+.imgContacto2{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    grid-area: logo2;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+.h2ContactoHijo1{
+    grid-area: email;
+    margin-top: 5.5rem;
+}
+.h2ContactoHijo2{
+    grid-area: tel;
+    margin-top: 1rem;
+}
+
+/* PAGINA CONOCENOS  */
+.mainConocenos{
+    background-color: #212121;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.h2Conocenos{
+    color: #7a001f;
+    text-decoration: underline;
+    font-size: 2rem;
+    width: auto;
+}
+.parrafoConocenos{
+    color:#FFF8E7 ;   
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align:center;
+}
+}
+/* CELULAR */
+                /* MEDIA QUERIES 480 */
 @media (max-width: 480px) {
+
+    /* MENU INICIO INDEX */
+
+    /*VinoMenu*/
+.vino__Menu__Div{
+    height: 750px;
+    width: 100vw;
+    object-fit: contain;
+}
+.vino__Menu__Titulo__1{
+    font-size: 4rem;
+    margin-left: 80px;
+}
+.vino__Menu__Titulo__2{
+    font-size: 4rem;
+    margin-left: 90px;
+}
+.vino__Menu__Titulo__3{
+    font-size: 6rem;
+    margin-left: 100px;
+}
+.vino__Menu__Titulo__4{
+    font-size: 7rem;
+    margin-left: 110px;
+}
                     /*Barra de Navegacion*/
 .header__Navegacion {
     display: flex;
-    height: 120px;
+    height: 170px;
     width: auto;
-    align-items: center;
-    justify-content: space-between;
     background-color: #7a001f;
-    padding: 10px 10px; /* Espaciado interno para la barra de navegación */
+    padding: 1px 1px; /* Espaciado interno para la barra de navegación */
     color: #FFF8E7;
+    z-index: 1;
+}
+
+.navegacion__Paginas__li{
+    margin-bottom: 5px;
+    display: inline-block;
+    
 }
 .navegacion__Paginas__ul{
-    display: none;
+    font-size: 0px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+    display: inline-block;
 }
-/* Estilo para el logotipo */
-.Logo__Vino__Teca:hover {
-    background-color: #58001675;
-    width: 120px;
-    border-radius: 20px;
+.navegacion__Paginas__a{
+    font-size: 1rem;
 }
+/* Estilo para el logo */
+
 .imagen__Logo__Principal{
     max-block-size: 80px;
     border-radius: 35px;
 }
+.imagen__Logo__Principal:hover{
+    display: block;
+}
+/*Primera fila de Vinos Menu Principal*/
+.section_Vinos { /*Grid padre*/
+    display: grid;
+    grid-template-columns: 15rem;
+    grid-template-rows: 19rem 19rem 21rem 19rem 19rem;
+    justify-content: center;
+}
+.section_Vinos_Row { /*Grid hijos*/
+    border: 5px solid #212121;
+    height: 17rem;
+    width: 15rem;
+    object-fit: contain;
+    margin:0;
+    cursor: pointer;
+}
+
+#vinoLUCA{
+    margin: 0;
+}
+.carruselAutomatico{
+    display: none;
+}
+.titulo__vino__h2{
+    font-size: 1.5rem;
+}
+/* FORMULARIO */
+.formularioPaginaPrincipal{ /*Grid hijo*/
+    border-width: 20px;
+    border: 5px solid #212121;
+    grid-area: formulario;
+    margin:1rem 1rem 0rem 1rem;
+    height: 450px;
+    width: 90vw;
+}
+#exampleInputEmail1{
+    width: 100%;
+    background-color: #21212136;
+    color: #7a001f;
+}
+.mb-3{
+    margin: 3rem;
+}
+#botonEnviarFormulario{
+    margin-left: 50px;
+}
+.mb-3{
+    margin-left: 50px;
+}
+.formularioParrafo{
+    background-color: #212121;
+    color: #FFF8E7;
+}
+
+/*--------------------------------------------------------------*/
+
+/* Conocenos */
 .h1Conocenos{
     font-size: 2rem;
-    width: 406px;
+    width: auto;
 }
 .h1Contacto{
     width: 406px;
@@ -620,17 +1295,18 @@ h3{
 }
 .mainConocenos{
     background-color: #212121;
-    height: 1850px;
-    width: 350px;
+    height: auto;
+    width: auto;
     text-align: center;
     margin: 20px 20px 20px 20px;
     border-radius: 5px;
     padding: 1rem;
 }
 .h2Conocenos{
-    color:#FFF8E7 ;
-    font-size: 3rem;
-    margin-left: 0rem;
+    color: #7a001f;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    width: auto;
 }
 .parrafoConocenos{
     color:#FFF8E7 ;   
@@ -641,13 +1317,9 @@ h3{
 .sectionConocenos{
     background-color: #333333;
     height: 18rem;
-    width: 406px;
+    width: auto;
 }
-.h2Conocenos{
-    margin-left: 4rem;
-    text-decoration: underline;
-    color: #7a001f;
-}
+
 .h3Conocenos{
     margin-left: 4rem;
     color:#FFF8E7 ;
@@ -687,11 +1359,15 @@ h3{
 .h2ContactoHijo2{
     font-size: 1rem;
 }
+
+/*------------------------*/
+
+/* FOOTER */
 footer{
     color: #FFF8E7;
     background-color: #212121;
     height: 160px;
-    width: 406px;
+    width: 100vw;
     margin-top: 15rem;
     display: flex;
     flex-direction: row;
@@ -739,6 +1415,7 @@ footer{
 }
 .footerParrafo{
     grid-area: parrafo;
+    margin-top: -1rem;
     padding-top: 0rem;
     padding-left: 2rem;
 }
@@ -788,7 +1465,7 @@ footer{
 }
 .containerContacto {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 25px auto;
     padding: 20px;
     background-color: #333333;
     border-radius: 20px;
@@ -832,8 +1509,110 @@ input[type="submit"]:hover {
     background-color: #555;
     color: #FFF8E7;
 }
+/* --------------------------------------------------------------------- */
+/* TIENDA */
+.navegacionTienda{
+    display: none;
 }
 
+.contenedorTienda{
+    display: grid;
+    grid-template-areas:
+    "vino1"
+    "vino1"
+    "vino1"
+    "vino1"
+    "vino1"
+    "vino1"
+    "vino2"
+    "vino2"
+    "vino2"
+    "vino2"
+    "vino2"
+    "vino2"
+    "vino3"
+    "vino3"
+    "vino3"
+    "vino3"
+    "vino3"
+    "vino3"
+    ;
+    grid-template-columns:200px;
+    grid-template-rows: 200px;
+    gap: 30px;
+    display: inline-block;
+    justify-content: center;
+}
+.divTienda1{
+    display: grid;
+    grid-area: vino1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: auto;
+    width: auto;
+}
+.divTienda2{
+    display: grid;
+    grid-area: vino2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: auto;
+    width: auto;
+}
+.divTienda3{
+    display: grid;
+    grid-area: vino3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: auto;
+    width: auto;
+}
+.producto {
+    background-color: #21212136;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 80vw;
+    height: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+.producto img {
+    width: auto;
+    object-fit: contain;
+    height: 200px;
+}
+.producto h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    height: 5px;
+    width: auto;
+}
+.producto p {
+    font-size: 1rem;
+    height: 20px;
+    width: auto;
+}
+.producto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 40px;
+    margin: 5px;
+    width: auto;
+}
+/* ------------------------------------------- */
+
+}
                 /* FUENTE DE LETRA*/
 @font-face {
     font-family: 'Merriweather', serif;
