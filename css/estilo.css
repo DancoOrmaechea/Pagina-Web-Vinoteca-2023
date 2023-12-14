@@ -1,3 +1,316 @@
+@charset "UTF-8";
+.h1Tienda {
+  background-color: #212121;
+  color: #FFF8E7;
+  text-align: center;
+}
+
+.contenedorTienda {
+  display: grid;
+  grid-template-areas: "nav vino1 vino1 vino1" "nav vino1 vino1 vino1" "nav vino2 vino2 vino2" "nav vino2 vino2 vino2" "nav vino3 vino3 vino3" "nav vino3 vino3 vino3";
+  grid-template-columns: 20rem 27rem 27rem 27rem;
+  grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem;
+  gap: 30px;
+}
+
+.divTienda1 {
+  display: grid;
+  grid-area: vino1;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  padding: 30px;
+  height: auto;
+}
+
+.divTienda2 {
+  display: grid;
+  grid-area: vino2;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  padding: 30px;
+  height: auto;
+}
+
+.divTienda3 {
+  display: grid;
+  grid-area: vino3;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  padding: 30px;
+  height: auto;
+}
+
+.producto {
+  background-color: #FFF8E7;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.producto img {
+  max-width: 10rem;
+  object-fit: contain;
+  height: auto;
+}
+.producto h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  height: 5px;
+  background-color: none;
+}
+.producto p {
+  font-size: 1rem;
+  height: 20px;
+  background-color: none;
+}
+.producto button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  margin: 5px;
+}
+.producto button:hover {
+  background-color: #555;
+}
+
+.navegacionTienda {
+  grid-area: nav;
+  border: #212121 5px solid;
+  height: 40rem;
+  margin: 2rem 2rem 2rem 4rem;
+}
+
+.listaVinosTienda {
+  margin: 2rem;
+}
+
+.section__Vinos__Div {
+  margin: 10px;
+  cursor: pointer;
+}
+.section__Vinos__Div:hover {
+  text-decoration: underline;
+}
+
+.navegacionTiendaPlaceHolder {
+  margin: 5px;
+  padding: 4px;
+}
+
+.h1Contacto {
+  background-color: #212121;
+  color: #FFF8E7;
+  text-align: center;
+  width: auto;
+}
+
+.divContactoPadre {
+  margin: 5rem;
+  display: grid;
+  grid-template-areas: "logo2 email" "logo1 tel";
+  grid-template-columns: 40rem 40rem;
+  grid-template-rows: 10rem 10rem;
+  background-color: rgba(33, 33, 33, 0.2392156863);
+  border-radius: 50px;
+}
+
+.imgContacto1 {
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+  grid-area: logo1;
+  margin-left: 35rem;
+}
+
+.imgContacto2 {
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+  grid-area: logo2;
+  margin-left: 35rem;
+  margin-top: 5rem;
+}
+
+.h2ContactoHijo1 {
+  grid-area: email;
+  margin-top: 5.5rem;
+}
+
+.h2ContactoHijo2 {
+  grid-area: tel;
+  margin-top: 1rem;
+}
+
+.containerContacto {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainContacto {
+  background-color: rgba(128, 128, 0, 0.1764705882);
+  border-radius: 50px;
+}
+
+.formContacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactoTituloForm {
+  color: #FFF8E7;
+}
+
+.labelContacto {
+  margin-bottom: 8px;
+  color: #FFF8E7;
+}
+
+.subtitulosFormulario {
+  color: #FFF8E7;
+}
+
+input {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#mensaje {
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: #333;
+  color: #FFF8E7;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #555;
+  color: #FFF8E7;
+}
+
+.h1Conocenos {
+  background-color: #212121;
+  color: #FFF8E7;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.a__Conocenos {
+  color: #FFF8E7;
+  text-decoration: none;
+}
+
+.mainConocenos {
+  background-color: #212121;
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.h2Conocenos {
+  color: #FFF8E7;
+  font-size: 3rem;
+  margin-left: 4rem;
+  text-decoration: underline;
+  color: #7a001f;
+}
+
+.parrafoConocenos {
+  color: #FFF8E7;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sectionConocenos {
+  background-color: #333333;
+  height: 18rem;
+  margin: 0;
+}
+
+.h3Conocenos {
+  margin-left: 4rem;
+  color: #FFF8E7;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+.h1Acceder {
+  background-color: #212121;
+  color: #FFF8E7;
+}
+
+.containerAcceder {
+  max-width: 600px;
+  margin: 50px auto;
+  margin-left: auto;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formAcceder {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactoTituloForm {
+  color: #FFF8E7;
+}
+
+.labelAcceder {
+  margin-bottom: 8px;
+  color: #FFF8E7;
+}
+
+.botonAcceder {
+  width: auto;
+}
+
+.usuarioAcceder {
+  width: auto;
+}
+
+.passwordAcceder {
+  width: auto;
+}
+
+.emailAcceder {
+  width: auto;
+}
+
 .vinoImgCarrusel {
   object-fit: contain;
   height: 23rem;
@@ -244,7 +557,7 @@ a {
   src: url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap);
 }
 .titulo__vino__h2 {
-  background-color: #FFF8E7;
+  background-color: #212121;
   color: #FFF8E7;
   display: flex;
   justify-content: center;
@@ -334,6 +647,16 @@ a {
   }
   #vinoLUCA {
     margin-left: 18rem;
+  }
+  #carruselNext {
+    margin-top: 40%;
+    width: 20px;
+    height: 3%;
+  }
+  #carruselPrev {
+    margin-top: 40%;
+    width: 20px;
+    height: 3%;
   }
   .formularioPaginaPrincipal {
     margin: 0;
@@ -426,7 +749,7 @@ a {
     margin-bottom: 160px;
   }
   .producto {
-    background-color: rgba(33, 33, 33, 0.2117647059);
+    background-color: #FFF8E7;
     border: 1px solid #ddd;
     margin: 5px;
     padding: 20px;
@@ -454,8 +777,8 @@ a {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
-    height: 40px;
-    margin: 5px;
+    height: 30px;
+    margin: 0px;
   }
   .producto button:hover {
     background-color: #555;
@@ -468,7 +791,7 @@ a {
   }
   footer {
     color: #FFF8E7;
-    background-color: rgba(33, 33, 33, 0);
+    background-color: #212121;
     height: 160px;
     width: 100vw;
     margin-top: 15rem;
@@ -602,6 +925,16 @@ a {
   #vinoLUCA {
     margin-left: 140px;
   }
+  #carruselNext {
+    margin-top: 40%;
+    width: 20px;
+    height: 10%;
+  }
+  #carruselPrev {
+    margin-top: 40%;
+    width: 20px;
+    height: 10%;
+  }
   .parrafoVinosRow {
     margin-left: 30px;
   }
@@ -674,7 +1007,7 @@ a {
     grid-area: parrafo;
     margin-top: -1rem;
     padding-top: 0rem;
-    padding-left: 2rem;
+    padding-left: 6rem;
   }
   .contenedorTienda {
     display: grid;
@@ -715,7 +1048,7 @@ a {
     height: auto;
   }
   .producto {
-    background-color: rgba(33, 33, 33, 0.2117647059);
+    background-color: #FFF8E7;
     border: 1px solid #ddd;
     margin: 10px;
     padding: 20px;
@@ -825,6 +1158,8 @@ a {
   }
 }
 @media (max-width: 480px) {
+  /* MENU INICIO INDEX */
+  /*VinoMenu*/
   .vino__Menu__Div {
     height: 750px;
     width: 100vw;
@@ -846,12 +1181,12 @@ a {
     font-size: 7rem;
     margin-left: 110px;
   }
-  .header__Navegacion {
+  .header__Navegacion { /*Barra de Navegacion*/
     display: flex;
     height: 170px;
     width: auto;
-    background-color: #212121;
-    padding: 1px 1px;
+    background-color: #7a001f;
+    padding: 1px 1px; /* Espaciado interno para la barra de navegación */
     color: #FFF8E7;
     z-index: 1;
   }
@@ -868,6 +1203,7 @@ a {
   .navegacion__Paginas__a {
     font-size: 1rem;
   }
+  /* Estilo para el logo */
   .imagen__Logo__Principal {
     max-block-size: 80px;
     border-radius: 35px;
@@ -875,13 +1211,14 @@ a {
   .imagen__Logo__Principal:hover {
     display: block;
   }
-  .section_Vinos {
+  /*Primera fila de Vinos Menu Principal*/
+  .section_Vinos { /*Grid padre*/
     display: grid;
     grid-template-columns: 15rem;
-    grid-template-rows: 19rem 19rem 21rem 19rem 19rem;
+    grid-template-rows: 21rem 21rem 24rem 21rem 21rem;
     justify-content: center;
   }
-  .section_Vinos_Row {
+  .section_Vinos_Row { /*Grid hijos*/
     border: 5px solid #212121;
     height: 17rem;
     width: 15rem;
@@ -892,13 +1229,24 @@ a {
   #vinoLUCA {
     margin: 0;
   }
+  #carruselNext {
+    margin-top: 70%;
+    width: 20px;
+    height: 10%;
+  }
+  #carruselPrev {
+    margin-top: 70%;
+    width: 20px;
+    height: 10%;
+  }
   .carruselAutomatico {
     display: none;
   }
   .titulo__vino__h2 {
     font-size: 1.5rem;
   }
-  .formularioPaginaPrincipal {
+  /* FORMULARIO */
+  .formularioPaginaPrincipal { /*Grid hijo*/
     border-width: 20px;
     border: 5px solid #212121;
     grid-area: formulario;
@@ -985,14 +1333,6 @@ a {
     background-color: rgba(33, 33, 33, 0);
     border-radius: 50px;
     text-align: center;
-    margin: 0rem;
-    display: grid;
-    grid-template-areas: "logo2 email" "logo1 tel";
-    grid-template-columns: 70px 70px;
-    grid-template-rows: 140px 140px;
-    background-color: rgba(33, 33, 33, 0);
-    border-radius: 50px;
-    text-align: center;
   }
   .imgContacto1 {
     height: 2rem;
@@ -1000,19 +1340,8 @@ a {
     object-fit: contain;
     grid-area: logo1;
     margin-left: 1rem;
-    height: 2rem;
-    width: 2rem;
-    object-fit: contain;
-    grid-area: logo1;
-    margin-left: 1rem;
   }
   .imgContacto2 {
-    height: 2rem;
-    width: 2rem;
-    object-fit: contain;
-    grid-area: logo2;
-    margin-left: 1rem;
-    margin-top: 5rem;
     height: 2rem;
     width: 2rem;
     object-fit: contain;
@@ -1082,7 +1411,7 @@ a {
     grid-area: parrafo;
     margin-top: -1rem;
     padding-top: 0rem;
-    padding-left: 2rem;
+    padding-left: 0rem;
   }
   .containerContacto {
     max-width: 600px;
@@ -1179,7 +1508,7 @@ a {
     width: auto;
   }
   .producto {
-    background-color: rgba(33, 33, 33, 0.2117647059);
+    background-color: #FFF8E7;
     border: 1px solid #ddd;
     margin: 10px;
     padding: 20px;
@@ -1215,315 +1544,6 @@ a {
     margin: 5px;
     width: auto;
   }
-}
-.h1Tienda {
-  background-color: #212121;
-  color: #FFF8E7;
-  text-align: center;
-}
-
-.contenedorTienda {
-  display: grid;
-  grid-template-areas: "nav vino1 vino1 vino1" "nav vino1 vino1 vino1" "nav vino2 vino2 vino2" "nav vino2 vino2 vino2" "nav vino3 vino3 vino3" "nav vino3 vino3 vino3";
-  grid-template-columns: 20rem 27rem 27rem 27rem;
-  grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem;
-  gap: 30px;
-}
-
-.divTienda1 {
-  display: grid;
-  grid-area: vino1;
-  display: inline-block;
-  text-align: center;
-  display: flex;
-  padding: 30px;
-  height: auto;
-}
-
-.divTienda2 {
-  display: grid;
-  grid-area: vino2;
-  display: inline-block;
-  text-align: center;
-  display: flex;
-  padding: 30px;
-  height: auto;
-}
-
-.divTienda3 {
-  display: grid;
-  grid-area: vino3;
-  display: inline-block;
-  text-align: center;
-  display: flex;
-  padding: 30px;
-  height: auto;
-}
-
-.producto {
-  background-color: rgba(33, 33, 33, 0.2117647059);
-  border: 1px solid #ddd;
-  margin: 10px;
-  padding: 20px;
-  max-width: 400px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.producto img {
-  max-width: 10rem;
-  object-fit: contain;
-  height: auto;
-}
-.producto h2 {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  height: 5px;
-}
-.producto p {
-  font-size: 1rem;
-  height: 20px;
-}
-.producto button {
-  background-color: #333;
-  color: #7a001f;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  height: 40px;
-  margin: 5px;
-}
-.producto button:hover {
-  background-color: #555;
-}
-
-.navegacionTienda {
-  grid-area: nav;
-  border: #212121 5px solid;
-  height: 40rem;
-  margin: 2rem 2rem 2rem 4rem;
-}
-
-.listaVinosTienda {
-  margin: 2rem;
-}
-
-.section__Vinos__Div {
-  margin: 10px;
-  cursor: pointer;
-}
-.section__Vinos__Div:hover {
-  text-decoration: underline;
-}
-
-.navegacionTiendaPlaceHolder {
-  margin: 5px;
-  padding: 4px;
-}
-
-.h1Contacto {
-  background-color: #212121;
-  color: #FFF8E7;
-  text-align: center;
-  width: auto;
-}
-
-.divContactoPadre {
-  margin: 5rem;
-  display: grid;
-  grid-template-areas: "logo2 email" "logo1 tel";
-  grid-template-columns: 40rem 40rem;
-  grid-template-rows: 10rem 10rem;
-  background-color: rgba(33, 33, 33, 0.2392156863);
-  border-radius: 50px;
-}
-
-.imgContacto1 {
-  height: 3rem;
-  width: 3rem;
-  object-fit: contain;
-  grid-area: logo1;
-  margin-left: 35rem;
-}
-
-.imgContacto2 {
-  height: 3rem;
-  width: 3rem;
-  object-fit: contain;
-  grid-area: logo2;
-  margin-left: 35rem;
-  margin-top: 5rem;
-}
-
-.h2ContactoHijo1 {
-  grid-area: email;
-  margin-top: 5.5rem;
-}
-
-.h2ContactoHijo2 {
-  grid-area: tel;
-  margin-top: 1rem;
-}
-
-.containerContacto {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #333333;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.mainContacto {
-  background-color: rgba(128, 128, 0, 0.1764705882);
-  border-radius: 50px;
-}
-
-.formContacto {
-  display: flex;
-  flex-direction: column;
-}
-
-.contactoTituloForm {
-  color: #FFF8E7;
-}
-
-.labelContacto {
-  margin-bottom: 8px;
-  color: #FFF8E7;
-}
-
-.subtitulosFormulario {
-  color: #FFF8E7;
-}
-
-input {
-  margin-bottom: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-textarea {
-  margin-bottom: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-#mensaje {
-  resize: none;
-}
-
-input[type=submit] {
-  background-color: #333;
-  color: #FFF8E7;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #555;
-  color: #FFF8E7;
-}
-
-.h1Conocenos {
-  background-color: #212121;
-  color: #FFF8E7;
-  border-radius: 50px;
-  text-align: center;
-  margin-top: 5rem;
-}
-
-.a__Conocenos {
-  color: #FFF8E7;
-  text-decoration: none;
-}
-
-.mainConocenos {
-  background-color: #212121;
-  height: 600px;
-  width: 1100px;
-  text-align: center;
-  margin: 2rem 2rem 2rem 25rem;
-  border-radius: 5px;
-  padding: 1rem;
-}
-
-.h2Conocenos {
-  color: #FFF8E7;
-  font-size: 3rem;
-  margin-left: 4rem;
-  text-decoration: underline;
-  color: #7a001f;
-}
-
-.parrafoConocenos {
-  color: #FFF8E7;
-  font-size: 1.2rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-.sectionConocenos {
-  background-color: #333333;
-  height: 18rem;
-  margin: 0;
-}
-
-.h3Conocenos {
-  margin-left: 4rem;
-  color: #FFF8E7;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-h3 {
-  margin: 1rem 0rem 2rem 0rem;
-}
-
-.h1Acceder {
-  background-color: #212121;
-  color: #FFF8E7;
-}
-
-.containerAcceder {
-  max-width: 600px;
-  margin: 50px auto;
-  margin-left: auto;
-  padding: 20px;
-  background-color: #333333;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.formAcceder {
-  display: flex;
-  flex-direction: column;
-}
-
-.contactoTituloForm {
-  color: #FFF8E7;
-}
-
-.labelAcceder {
-  margin-bottom: 8px;
-  color: #FFF8E7;
-}
-
-.botonAcceder {
-  width: auto;
-}
-
-.usuarioAcceder {
-  width: auto;
-}
-
-.passwordAcceder {
-  width: auto;
-}
-
-.emailAcceder {
-  width: auto;
 }
 
 /*# sourceMappingURL=estilo.css.map */

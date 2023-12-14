@@ -1,3 +1,4 @@
+//PAGINA TIENDA
 .h1Tienda {
 	background-color: $background-color_5;
 	color: $color_1;
@@ -38,7 +39,7 @@
 	height: auto;
 }
 .producto {
-	background-color: $background-color_6;
+	background-color: $background-color_1;
 	border: 1px solid #ddd;
 	margin: 10px;
 	padding: 20px;
@@ -53,14 +54,16 @@
 		margin: 10px 0;
 		font-size: 1.2rem;
 		height: 5px;
+		background-color: none;
 	}
 	p {
 		font-size: 1rem;
 		height: 20px;
+		background-color: none;
 	}
 	button {
 		background-color: $background-color_7;
-		color: $color_2;
+		color: $color_3;
 		border: none;
 		padding: 10px 20px;
 		cursor: pointer;
@@ -92,7 +95,7 @@
 	margin: 5px;
 	padding: 4px;
 }
-
+//PAGINA CONTACTO
 .h1Contacto {
 	background-color: $background-color_5;
 	color: $color_1;
@@ -183,7 +186,7 @@ input[type="submit"] {
 		color: $color_1;
 	}
 }
-
+//PAGINA CONOCENOS
 .h1Conocenos {
 	background-color: $background-color_5;
 	color: $color_1;
@@ -197,10 +200,10 @@ input[type="submit"] {
 }
 .mainConocenos {
 	background-color: $background-color_5;
-	height: 600px;
-	width: 1100px;
+	height: auto;
+	width: auto;
 	text-align: center;
-	margin: 2rem 2rem 2rem 25rem;
+	margin: 20px 20px 20px 20px;
 	border-radius: 5px;
 	padding: 1rem;
 }
@@ -231,7 +234,7 @@ input[type="submit"] {
 h3 {
 	margin: 1rem 0rem 2rem 0rem;
 }
-
+//PAGINA ACCEDER Y REGISTRARSE
 .h1Acceder {
 	background-color: $background-color_5;
 	color: $color_1;
