@@ -331,7 +331,7 @@ h3 {
 
 .carruselVinos {
   border: 2px solid #212121;
-  margin: 1rem;
+  margin: 0rem;
 }
 
 .subtituloDestacados {
@@ -572,7 +572,7 @@ a {
   display: block;
   margin-top: 5rem;
   height: 2rem;
-  background-color: #FFF8E7;
+  background-color: #212121;
 }
 
 .section_Vinos {
@@ -1158,6 +1158,8 @@ a {
   }
 }
 @media (max-width: 480px) {
+  /* MENU INICIO INDEX */
+  /*VinoMenu*/
   .vino__Menu__Div {
     height: 750px;
     width: 100vw;
@@ -1179,12 +1181,12 @@ a {
     font-size: 7rem;
     margin-left: 110px;
   }
-  .header__Navegacion { 
+  .header__Navegacion { /*Barra de Navegacion*/
     display: flex;
     height: 170px;
     width: auto;
     background-color: #7a001f;
-    padding: 1px 1px; 
+    padding: 1px 1px; /* Espaciado interno para la barra de navegación */
     color: #FFF8E7;
     z-index: 1;
   }
@@ -1201,7 +1203,7 @@ a {
   .navegacion__Paginas__a {
     font-size: 1rem;
   }
-  
+  /* Estilo para el logo */
   .imagen__Logo__Principal {
     max-block-size: 80px;
     border-radius: 35px;
@@ -1209,13 +1211,14 @@ a {
   .imagen__Logo__Principal:hover {
     display: block;
   }
-  .section_Vinos { 
+  /*Primera fila de Vinos Menu Principal*/
+  .section_Vinos { /*Grid padre*/
     display: grid;
     grid-template-columns: 15rem;
     grid-template-rows: 21rem 21rem 24rem 21rem 21rem;
     justify-content: center;
   }
-  .section_Vinos_Row {
+  .section_Vinos_Row { /*Grid hijos*/
     border: 5px solid #212121;
     height: 17rem;
     width: 15rem;
@@ -1242,7 +1245,8 @@ a {
   .titulo__vino__h2 {
     font-size: 1.5rem;
   }
-  .formularioPaginaPrincipal { 
+  /* FORMULARIO */
+  .formularioPaginaPrincipal { /*Grid hijo*/
     border-width: 20px;
     border: 5px solid #212121;
     grid-area: formulario;
