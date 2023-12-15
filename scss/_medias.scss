@@ -268,6 +268,58 @@
 	}
 }
 @media (max-width: 770px) {
+	//menu hamburguesa
+	.navegacion__Paginas__ul{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		background-color: #7a001f;
+		border-radius: 20px;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 10;
+		padding: 2rem;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .5s;
+		justify-content: space-between;
+	}
+	.navegacion__Paginas__ul.abierto{
+		visibility:visible;
+		opacity: 1;
+	}
+	.navegacion__Paginas__li{
+		width: 100%;	
+		border-bottom: 5px solid #212121;
+		border-radius: 20px;
+	} 
+	.menuAbrir{
+		display: block;
+		background: none;
+		font-size: 40px;
+		color: white;
+		border: none;
+		cursor: pointer;
+		padding-right: 50px;
+	}
+	.menuCerrar{
+		display: block;
+		background: none;
+		font-size: 40px;
+		color: white;
+		border: none;
+		cursor: pointer;
+	}
+	.header__Navegacion { /*Barra de Navegacion*/
+		display: flex;
+		height: 170px;
+		width: auto;
+		background-color: $background-color_2;
+		padding: 1px 1px; /* Espaciado interno para la barra de navegación */
+		color: $color_1;
+		z-index: 1;
+	}
 	.section_Vinos {
 		display: grid;
 		grid-template-columns: 17rem 17rem;
@@ -559,6 +611,7 @@
 		padding: 1px 1px; /* Espaciado interno para la barra de navegación */
 		color: $color_1;
 		z-index: 1;
+		
 	}
 	.navegacion__Paginas__li {
 		margin-bottom: 5px;
@@ -568,7 +621,6 @@
 		font-size: 0px;
 		margin-top: 30px;
 		margin-bottom: -15px;
-		display: inline-block;
 	}
 	.navegacion__Paginas__a {
 		font-size: 1rem;

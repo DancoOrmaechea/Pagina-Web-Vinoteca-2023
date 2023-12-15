@@ -17,21 +17,28 @@
 <body>
     <!-- BARRA DE NAVEGACION -->
     <header class="header__Navegacion">
-        <div class="Logo__Vino__Teca"> 
+        <div class="Logo__Vino__Teca">
             <a href="./index.html">
                 <img class="animate__animated animate__bounce" id="imagen__Logo__Principal"
-                src="./imgs/VinoTecaPREMIUM1.png" alt="LogoVinoTeca"> 
+                    src="./imgs/VinoTecaPREMIUM1.png" alt="LogoVinoTeca">
             </a>
         </div>
-        <nav class="navegacion__Paginas__ul">
-            <ul class="navegacion__Paginas__ul">
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./index.html">Inicio</a></li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./paginas/tienda.html">Tienda</a></li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./paginas/contacto.html">Contacto</a></li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./paginas/conocenos.html">Conocenos</a></li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./paginas/accederRegistrarse.html">Acceder</a></li>
+        <nav>
+            <ul id="navHamburguesa" class="navegacion__Paginas__ul">
+                <button class="menuCerrar" id="menuCerrar">X</button>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./index.html">Inicio</a>
+                </li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./paginas/tienda.html">Tienda</a></li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./paginas/contacto.html">Contacto</a></li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./paginas/conocenos.html">Conocenos</a></li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./paginas/accederRegistrarse.html">Acceder</a></li>
             </ul>
         </nav>
+        <button class="menuAbrir" id="menuAbrir">=</button>
     </header>
     <div class="vino__Menu__Div">
         <h1 class="vino__Menu__Titulo__1">La</h1>
@@ -127,13 +134,13 @@
                         src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRI4_PMLsgZXVkhG4cwdiBheMEKNqUdmiCXMLFSyHxploQBRZkIh0Vj6ye_zsZgONyw_7AH-bYBEqigkXV0fvf_n0hUAzrRBhILxu9N_U5K2OkKnVTVG2CtZg&usqp=CAE"
                         class="d-block w-100" alt="Criolla">
                 </div>
-                <button id="carruselPrev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="prev">
+                <button id="carruselPrev" class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button id="carruselNext" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="next">
+                <button id="carruselNext" class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="false"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -177,17 +184,18 @@
             </div>
         </aside>
     </section>
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
         <p class="footerParrafo">Todos los derechos reservados®</p>
         <img class="logosFooter1" src="./imgs/wpp logo.png" alt="whatsapp logo">
         <img class="logosFooter2" src="./imgs/ig logo.png" alt="instagram logo">
         <img class="logosFooter3" src="./imgs/fb lgo3.png" alt="facebook logo">
     </footer>
-<!--Bootstrap-->
+    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+    <script src="./nav.js"></script>
 </body>
 
 </html>

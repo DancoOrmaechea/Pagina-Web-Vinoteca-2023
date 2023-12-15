@@ -12,21 +12,28 @@
 <body>
     <!-- BARRA DE NAVEGACION -->
     <header class="header__Navegacion">
-        <div class="Logo__Vino__Teca"> 
+        <div class="Logo__Vino__Teca">
             <a href="../index.html">
                 <img class="animate__animated animate__bounce" id="imagen__Logo__Principal"
-                src="../imgs/VinoTecaPREMIUM1.png" alt="LogoVinoTeca"> 
+                    src="../imgs/VinoTecaPREMIUM1.png" alt="LogoVinoTeca">
             </a>
         </div>
-        <nav class="navegacion__Paginas__ul">
-            <ul class="navegacion__Paginas__ul">
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="../index.html">Inicio</a></li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./tienda.html">Tienda</a> </li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./contacto.html">Contacto</a></li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./conocenos.html">Conocenos</a></li>
-                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="./accederRegistrarse.html">Acceder</a></li>
+        <nav>
+            <ul id="navHamburguesa" class="navegacion__Paginas__ul">
+                <button class="menuCerrar" id="menuCerrar">X</button>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a" href="../index.html">Inicio</a>
+                </li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./tienda.html">Tienda</a></li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./contacto.html">Contacto</a></li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./conocenos.html">Conocenos</a></li>
+                <li class="navegacion__Paginas__li"><a class="navegacion__Paginas__a"
+                        href="./accederRegistrarse.html">Acceder</a></li>
             </ul>
         </nav>
+        <button class="menuAbrir" id="menuAbrir">=</button>
     </header>
     <h1 class="h1Tienda">TIENDA</h1>
     <main class="contenedorTienda">
@@ -206,6 +213,7 @@
         <img class="logosFooter2" src="../imgs/ig logo.png" alt="instagram logo">
         <img class="logosFooter3" src="../imgs/fb lgo3.png" alt="facebook logo">
     </footer>
+    <script src="../nav.js"></script>
 </body>
 
 </html>
