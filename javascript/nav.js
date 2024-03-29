@@ -1,3 +1,4 @@
+// Menu hamburguesa
 const abrir=document.querySelector ("#menuAbrir")
 const cerrar=document.querySelector ("#menuCerrar")
 const nav=document.querySelector ("#navHamburguesa")
