@@ -163,6 +163,10 @@
   border-radius: 50px;
 }
 
+#mailto{
+	opacity: 0;
+}
+
 .formContacto {
   display: flex;
   flex-direction: column;
@@ -1242,7 +1246,7 @@ a {
   }
   .header__Navegacion { /*Barra de Navegacion*/
     display: flex;
-    height: 170px;
+    height: 130px;
     width: auto;
     background-color: #7a001f;
     padding: 1px 1px; /* Espaciado interno para la barra de navegación */
@@ -1263,8 +1267,8 @@ a {
   }
   /* Estilo para el logo */
   .imagen__Logo__Principal {
-    max-block-size: 80px;
-    border-radius: 35px;
+    max-block-size: 60px;
+    border-radius: 15px;
   }
   .imagen__Logo__Principal:hover {
     display: block;

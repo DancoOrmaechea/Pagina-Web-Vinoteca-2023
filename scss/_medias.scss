@@ -272,7 +272,7 @@
 	.navegacion__Paginas__ul{
 		display: flex;
 		flex-direction: column;
-		position: absolute;
+		position: fixed;
 		background-color: #7a001f;
 		border-radius: 20px;
 		z-index: 1;
@@ -288,6 +288,7 @@
 	.navegacion__Paginas__ul.abierto{
 		visibility:visible;
 		opacity: 1;
+		position: fixed;
 	}
 	.navegacion__Paginas__li{
 		width: 100%;	
@@ -296,6 +297,7 @@
 	} 
 	.menuAbrir{
 		display: block;
+		position: absolute;
 		background: none;
 		font-size: 40px;
 		color: white;
@@ -605,7 +607,8 @@
 	}
 	.header__Navegacion { /*Barra de Navegacion*/
 		display: flex;
-		height: 170px;
+
+		height: 130px;
 		width: auto;
 		background-color: $background-color_2;
 		padding: 1px 1px; /* Espaciado interno para la barra de navegación */
@@ -627,8 +630,8 @@
 	}
 	/* Estilo para el logo */
 	.imagen__Logo__Principal {
-		max-block-size: 80px;
-		border-radius: 35px;
+		max-block-size: 60px;
+		border-radius: 15px;
 		&:hover {
 			display: block;
 		}

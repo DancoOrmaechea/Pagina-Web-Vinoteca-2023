@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceder</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -36,19 +36,20 @@
         <button class="menuAbrir" id="menuAbrir">=</button>
     </header>
 
-    <h1 class="h1Acceder"> ACCEDER </h1>
+    <h1 class="h1Acceder"> REGISTRARSE </h1>
     <div class="containerAcceder">
-        <h2 class="contactoTituloForm">ACCEDER</h2>
-        <form id="loginForm" class="formAcceder" action="#" method="post">
-            <label class="labelAcceder" for="nombre">Correo electronico</label>
-            <input id="email" class="usuarioAcceder" type="text" id="nombre" name="nombre" required>
-            <label class="subtitulosFormulario" for="email">Contraseña</label>
-            <input id="password" class="passwordAcceder" type="password" id="password" name="password" required>
-            <input class="botonAcceder" type="submit" value="Acceder">
+        <h2 class="contactoTituloForm">REGISTRATE</h2>
+        <form id="signupForm" class="formContacto" action="#" method="post">
+            <label class="labelAcceder" for="name">Nombre</label>
+            <input id="name" class="usuarioAcceder" type="text" name="nombre" required>
+            <label class="subtitulosFormulario" for="email">Correo Electronico</label>
+            <input id="email" class="emailAcceder" type="text" name="email" required>
+            <label class="subtitulosFormulario" for="password">Contraseña</label>
+            <input id="password" class="passwordAcceder" type="password" name="password" required>
+            <input class="botonAcceder" type="submit" value="Registrarse">
         </form>
-        <p class="formularioParrafo">¿No tenes una cuenta? <a href="../paginas/signup.html">Registro</a></p>
+        <p class="formularioParrafo">Ya tenes una cuenta? <a href="./accederRegistrarse.html">Login</a></p>
     </div>
-    <!-- <p>¿No tenes una cuenta? <a href="../paginas/signup.html">Registro</a></p> -->
 
 <!-- FOOTER -->
     <footer>
@@ -57,7 +58,7 @@
         <img class="logosFooter2" src="../imgs/ig logo.png" alt="instagram logo">
         <img class="logosFooter3" src="../imgs/fb lgo3.png" alt="facebook logo">
     </footer>
-    <script src="../javascript/login.js"></script>
+    <script src="../javascript/signup.js"></script>
     <script src="../javascript/nav.js"></script>
 </body>
 
